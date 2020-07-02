@@ -33,8 +33,8 @@ public class UserController {
 		return Messenger.SUCCESS; 
 	}
 	
-	@PostMapping("/login")
-	public User login(HttpSession session, @RequestBody User user) {
+	@PostMapping("/login/{userid}")
+	public User login(HttpSession session, @RequestBody User user,@PathVariable String userid ) {
 		User returnUser = userService.findByUseridAndPassword(user);
 		 session.setAttribute("session", returnUser);
 		return returnUser; 

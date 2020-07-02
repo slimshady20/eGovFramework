@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<form id="joinForm" style="border:1px solid #ccc">
+<form id="LoginForm" style="border:1px solid #ccc">
   <div class="container">
-    <h1>Sign Up</h1>
+    <h1>Login</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
 
@@ -23,16 +23,16 @@
 
     <div class="clearfix">
       <button type="button" class="cancelbtn">Cancel</button>
-      <button id="signup_btn" type="submit" class="signupbtn">Sign Up</button>
+      <button id="login" type="submit" class="signupbtn">Login</button>
     </div>
   </div>
 </form>
-<script src="${js}/store/user.js"></script>
+<script src="${javascript}/store/user.js"></script>
 <script>
-document.getElementById('signup_btn').addEventListener('click',function(e){
+document.getElementById('login').addEventListener('click',function(e){
 	e.preventDefault()
-	person.init()
-	person.join({"userid": document.getElementById('userid').value,
+	user.init()
+	user.login({"userid": document.getElementById('userid').value,
         		"password": document.getElementById('password').value})
 })
 </script>

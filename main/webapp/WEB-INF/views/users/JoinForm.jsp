@@ -31,6 +31,8 @@ document.getElementById('signup_btn').addEventListener('click',function(e){
 	user.join({"userid": document.getElementById('userid').value,
         		"password": document.getElementById('password').value})
 })
+
+
 </script>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}

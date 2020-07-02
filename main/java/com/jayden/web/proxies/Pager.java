@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Data
 @Component
 public class Pager {
+	@Autowired UserProxy manager;
    private int rowCount,rowStart,rowEnd,
         pageCount,pageSize,pageStart,pageEnd,nowPage,
     blockCount,blockSize,prevBlock, nextBlock, nowBlock;

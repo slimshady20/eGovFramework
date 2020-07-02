@@ -1,0 +1,16 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.jayden.web.mappers.UserMapper">
+	<select id="truncateUser" parameterType="hashMap">
+	${TRUNCATE_USERS}
+	</select>
+	<select id="createDB" parameterType="hashMap">
+	${CREATE_DB}
+	</select>
+	<select id="selectByUseridAndPassword" resultType="com.jayden.web.domains.User"
+	parameterType="com.jayden.web.domains.User">
+	${CREATE_DB}
+	</select>
+
+</mapper>

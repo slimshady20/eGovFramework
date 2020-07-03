@@ -1,6 +1,7 @@
 package com.jayden.web.services;
 
 import java.sql.Date;
+import java.util.List;
 
 import org.springframework.stereotype.Component;
 
@@ -11,7 +12,7 @@ public interface UserService {
 	public void save();
 	 public void update();
 	 public void findOne();
-	 public void findAll();	
+	 public List<User> findAll();	
 	 public void count();
 	 public void delete();
 	 public User findByUseridAndPassword(User user);

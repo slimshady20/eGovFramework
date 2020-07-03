@@ -1,6 +1,7 @@
 package com.jayden.web.services;
 
 import java.sql.Date;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,11 +30,7 @@ public class UserServiceImpl implements UserService {
 		// TODO Auto-generated method stub
 		
 	}
-	@Override
-	public void findAll() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 	@Override
 	public void count() {
 		// TODO Auto-generated method stub
@@ -83,6 +80,11 @@ public class UserServiceImpl implements UserService {
 	public User findByUseridAndPassword(User param) {
 		return userMapper.selectByUseridAndPassword(param);
 		
+	}
+	@Override
+	public List<User> findAll() {
+		// TODO Auto-generated method stub
+		return userMapper.selectAll();
 	}
 
 

@@ -12,5 +12,8 @@
 	parameterType="com.jayden.web.domains.User">
 	${CREATE_DB}
 	</select>
-
+  	<select id="selectAll"
+  	resultType="com.jayden.web.domains.User">
+  	select * from users
+ 	 </select>
 </mapper>
